@@ -16,8 +16,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	case WM_CREATE:
 		hFont = CreateFont(32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, TEXT("Consolas"));
 		hSecHandPen = CreatePen(PS_SOLID, 1, GetSysColor(COLOR_WINDOWTEXT));
-		hMinHandPen = CreatePen(PS_SOLID, 4, GetSysColor(COLOR_WINDOWTEXT));;
-		hHourHandPen = CreatePen(PS_SOLID, 8, GetSysColor(COLOR_WINDOWTEXT));;
+		hMinHandPen = CreatePen(PS_SOLID, 4, GetSysColor(COLOR_WINDOWTEXT));
+		hHourHandPen = CreatePen(PS_SOLID, 8, GetSysColor(COLOR_WINDOWTEXT));
 		SetTimer(hWnd, 0x1234, 1000, 0);
 		break;
 	case WM_TIMER:
